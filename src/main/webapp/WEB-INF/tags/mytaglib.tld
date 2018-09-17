@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>jstl</short-name>
+    <uri>http://ataur.me/jstl</uri>
+    <function>
+        <name>replaceFirst</name>
+        <function-class>me.imran.personalblog.util.Functions</function-class>
+        <function-signature>java.lang.String replaceFirst(java.lang.String,java.lang.String,java.lang.Integer,java.lang.String)</function-signature>
+    </function>
+    <function>
+        <name>replaceSpecialCharacter</name>
+        <function-class>me.imran.personalblog.util.Functions</function-class>
+        <function-signature>java.lang.String replaceSpecialCharacter(java.lang.String)</function-signature>
+    </function>
+    <function>
+        <name>html2Text</name>
+        <function-class>me.imran.personalblog.util.Functions</function-class>
+        <function-signature>java.lang.String html2Text(java.lang.String)</function-signature>
+    </function>
+    <tag>
+        <name>footnote</name>
+        <tag-class>me.imran.personalblog.util.Footnote</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>text</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>footnoteNo</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.Integer</type>
+        </attribute>
+        <attribute>
+            <name>count</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>locale</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>footnoteTotal</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>footnotes</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+    </tag>
+    <tag>
+    <name>actLink</name>
+    <tag-class>me.imran.personalblog.util.ActLink</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+        <name>text</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+        <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+        <name>contextPath</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+        <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+        <name>output</name>
+        <required>false</required>
+        <rtexprvalue>true</rtexprvalue>
+        <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+        <name>actShortList</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+        <type>java.lang.Object</type>
+    </attribute>
+
+</tag>
+
+
+</taglib>

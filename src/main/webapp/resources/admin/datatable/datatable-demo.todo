@@ -1,0 +1,9 @@
+DataTable Highly Customizable Demo:
+
+  Tasks:
+    ✔ Create Javascript Button array of Object from Html Table Attributess     @done (16-08-18 14:56)
+    ☐ Create Columns From Thead column attributes
+    ✔ Language File is not working @done (16-08-18 17:12)
+    ☐ Pdf exporting with image if the table has any image field.
+    ☐ Action Column Customizable from Table Settings. Action button can be Edit, Delete, View Details.
+    ☐ Massive Delete Button Should be created from settings

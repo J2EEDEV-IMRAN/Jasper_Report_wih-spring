@@ -1,0 +1,42 @@
+<table id="dt" class="table table-striped table-bordered dt-responsive nowrap compact stripe"
+	data-language="{&quot;url&quot;:&quot;./english.json&quot;}"
+	data-title="This is test document"
+	data-deferRender="true"
+	data-stateSave="false"
+	data-responsive="{&quot;details&quot;:false}"
+	data-page-length="10"
+	data-lengthMenu="[ [10, 20, 50, 100,-1], [10, 20, 50, 100, &quot;All&quot;] ]"
+	data-order="[[ 2, &quot;asc&quot; ]]"
+	data-info="true"
+	data-ordering="true"
+	data-paging="true"
+	data-scrollY="&quot;200px&quot;"
+	data-processing="true"
+	data-searching="true"
+	data-serverSide="true"
+	data-ajax="{&quot;url&quot;:&quot;data.json&quot;,&quot;dataSrc&quot;:&quot;data&quot;}"
+	data-dom="<'row toolbar'><'row'<'col-sm-3'l><'col-sm-5 text-center'B><'col-sm-4'f>><'row'<'col-sm-12'tr>><'row'<'col-sm-5'i><'col-sm-7'p>>"
+	buttons="copy,csv,excel,pdf,print,reload,resetColReorder,colvis"
+	data-fixedHeader="true"
+	width="100%"
+	data-columns-sequence="index,image,name,position,office,extn,start_date,salary,action"
+	>
+    <thead>
+    	<tr>
+    		<th rowspan="2" name="index" value="" type="index" data-visible="false" data-priority="7" data-orderable="false" data-searchable="false">SL No</th>
+        	<th rowspan="2" name="image" value="image" data-export="pdf,print" data-priority="2"  type="picture" data-orderable="false" data-searchable="false" render="(function( data, type, full, meta) { return '<a href=\'\'><img src=\'http://localhost:3000/image.jpg\' pdf-width=\'30\' pdf-height=\'20\' width=\'50\' class=\'img\'height=\'40\'/></a>'})">Picture</th>
+            <th rowspan="2" name="name" value="name" data-priority="1">Name</th>
+            <th colspan="2">HR</th>
+            <th colspan="3">Contact</th>
+            <th rowspan="2" name="action" value="id" data-edit="true" data-delete="false" data-view="true" data-delete-url="delete/:id" data-edit-url="edit/:id" data-view-url="view/:id" data-view-button-class="btn btn-primary btn-sm" data-edit-button-class="btn btn-info btn-sm" data-delete-button-class="btn btn-danger btn-sm" data-view-icon-class="fa fa-info-circle" data-edit-icon-class="" data-delete-icon-class="fa fa-trash" data-notexport="true" data-orderable="false" data-searchable="false" data-priority="2">Action</th>
+    	</tr>
+        <tr>
+            <th name="position" value="position" data-priority="4">Position</th>
+            <th name="office" value="office" data-priority="5">Office</th>
+            <th name="extn" value="extn" data-priority="6">Extb</th>
+            <th name="start_date" value="start_date" >Start date</th>
+            <th name="salary" value="salary" render="(function ( data, type, full, meta ) {return 'BDT '+data;})" data-priority="3">Salary</th>
+        </tr>
+         
+    </thead>
+</table>

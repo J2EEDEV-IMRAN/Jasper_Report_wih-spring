@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jsperreport" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b1333975-ddb4-4886-90b0-ddb2a4528e9c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="26"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="postTitle" class="java.lang.String"/>
+	<field name="post" class="java.lang.String"/>
+	<field name="postCategory" class="java.lang.String"/>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{postCategory}]]></groupExpression>
+		<groupHeader>
+			<band height="50">
+				<textField>
+					<reportElement x="0" y="9" width="260" height="30" uuid="4dacd4f4-21b8-434d-b3b4-ef809997c298"/>
+					<textFieldExpression><![CDATA[$F{postCategory}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="203" y="35" width="100" height="20" uuid="b3092d14-3c90-4dbf-b503-3533ecaeb26e"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Post List]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="112" height="59" uuid="47f4757a-ab8b-4ba2-8f83-1009b0dfece5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="2" width="137" height="59" uuid="f3bfcef5-395d-4e48-a2ef-fff6943ccc19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[postTitle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="249" y="2" width="187" height="59" uuid="7b0eeecb-e494-4318-8596-e5ccf1690d66"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[post]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="2" width="119" height="59" uuid="fe246469-d681-42fd-8c66-6282858fe016"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[postCategory]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="112" height="125" uuid="4b87691c-c352-482e-836b-2be0dc18a0c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="0" width="137" height="125" uuid="8518aa94-424f-4573-bb78-78940cee5f2f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{postTitle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="249" y="0" width="187" height="125" uuid="74a3760a-f28d-4b67-b0cd-e594596d9712"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{post}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="436" y="0" width="119" height="125" uuid="6f33adac-6df2-4bba-b98c-67ef50575543"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{postCategory}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

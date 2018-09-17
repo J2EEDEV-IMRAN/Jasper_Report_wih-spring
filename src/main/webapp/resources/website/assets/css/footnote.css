@@ -1,0 +1,19 @@
+.footnote {
+    float: footnote;
+    color: red;
+}
+.footer {
+    border-top:1px solid red;
+    page-break-after: always;
+    float:none;
+}
+.footerAtDocEnd {
+    border-top:1px solid red;
+}
+.footerEntry {
+    height:15px;
+    font-size:8pt;
+}
+.red {
+    color: red;
+}
